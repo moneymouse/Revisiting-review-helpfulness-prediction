@@ -18,7 +18,7 @@ sys.path.append(os.getcwd())  # 修复嵌入式 Python 的导入问题
 MIN_IMAGES_NUM = 1  # 最少图片数量，如果少于这个数量则跳过这条评论
 MIN_TEXT_LENGTH = 20  # 最短评论长度
 # FIRST = 10130  # 用于断点续传
-FIRST = 1
+FIRST = 680
 #URL = "https://www.yelp.com//biz/bacchanal-buffet-las-vegas-9"  # 需要爬取的餐馆 url
 TIMEOUT = 15  # 请求超时
 PROXY_URL = "https://h.shanchendaili.com/api.html?action=get_ip&key=HUf8af2f1c09212152278CIw&time=10&count=1&protocol=http&type=json&only=0"
@@ -28,7 +28,7 @@ HEADERS_LIST = [
         "Referer": "https://www.yelp.com/",
         "Origin": "https://www.yelp.com",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44",
+                    "Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44",
         "Host": "www.yelp.com",
         "sec-fetch-size": "cross-site",
         "sec-ch-ua": '"Microsoft Edge";v="95", "Chromium";v="95", ";Not A Brand";v="99"',
@@ -111,8 +111,9 @@ COLUMN_NAMES = [
 session = requests.Session()  # 持久会话
 
 def common_get(url) -> requests.Response:
+    print(f"{url}")
     res = requests.get(url,headers=HEADERS_LIST[0])
-    print(f"{url}:{res.ok}")
+    print(f"status:{res.ok}")
     time.sleep(0.005)
     return res
 
@@ -121,7 +122,7 @@ def write_row(filename: str, row: dict):
     将 row 添加在文件 filename 中
     """
     # todo: 把w+改成a+
-    with open(filename, newline='', encoding='utf-8-sig', mode='w+') as f:
+    with open(filename, newline='', encoding='utf-8-sig', mode='a') as f:
         writer = csv.DictWriter(f, COLUMN_NAMES, extrasaction="ignore")  # 忽略不在 COLUMN_NAMES 中的项目
         if f.tell() == 0:  # 第一次保存，先打印列名
             writer.writeheader()
@@ -132,11 +133,8 @@ def log(*text):
     print(f"[{time.strftime('%X')}]", *text, flush=True)
 
 
-def main():
-    df1 = pd.read_excel('a.xlsx')
-    list = df1.values.tolist()
-    list = [b for i in list for b in i]
-    for hf_url in list:
+def main(url_list):
+    for hf_url in url_list:
 
         url = "https://www.yelp.com/" + hf_url
         resp = common_get(url)  # 使用代理请求网页
@@ -144,6 +142,9 @@ def main():
             raise Exception(f"无代理可请求网页（{url}），或所有代理已达最大使用次数，稍后再试")
 
         parser = etree.HTML(resp.text)  # 解析网页
+        if(len(parser.xpath('//meta[@name="yelp-biz-id"]/@content'))<1):
+            print("暂无代理，等待中...")
+            time.sleep(50)
         meta = parser.xpath('//meta[@name="yelp-biz-id"]/@content')[0]  # 该酒店的唯一ID，用于构建 comment_url
         page_data = {
             "address": "\n".join(parser.xpath('//address//span/text()')),
@@ -154,7 +155,6 @@ def main():
             "classall": "-".join(parser.xpath('//div[@data-testid="photoHeader"]//span[3]/span/a/text()')),
         }  # 提取该页面数据
         filename = f"./data/{page_data['name']}.csv"  # 保存数据的文件以 csv 格式存储
-
         # 爬取评论
         # 评论 url 模板
         template = f"https://www.yelp.com/biz/{meta}/review_feed?rl=en&q=&sort_by=relevance_desc&start={{start}}"
@@ -167,23 +167,26 @@ def main():
             if resp is None and start != FIRST:  # 无可用代理，保存当前数据并退出
                 raise Exception(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，稍等后修改 FIRST = {start} 再重新运行")
 
-            data = resp.json()
-            reviews = data["reviews"]
-            with open("comment_example.json","w+") as f:
-                print(f"Save {comment_url} reviews into comment_example.json")
-                json.dump(reviews,f)
-
+            try:
+                data = resp.json()
+                reviews = data["reviews"]
+            except Exception as e:
+                print(e)
+                print(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，稍等后修改 FIRST = {start} 再重新运行")
+                time.sleep(10)
+                continue
             if data and start == FIRST:  # 第一次遍历需要更新评论数量
                 total_reviews = data["pagination"]["totalResults"]
+                print(total_reviews)
                 log("需要爬取", url, "共", total_reviews - FIRST, "条评论")
 
             for review in reviews:  # 提取数据
 
                 # 预处理
                 # 跳过useful过低评论
-                if(review["feedback"]["counts"]["useful"]<1):
-                    print(review["id"])
-                    continue
+                if(review["feedback"]["counts"]["useful"]<1): continue
+
+                if(review["totalPhotos"]<1): continue
 
                 # 往 row 中添加评论用户信息
                 user_url = f"https://www.yelp.com{review['user']['link']}"
@@ -204,7 +207,7 @@ def main():
                     votes_node = parser.xpath('//ul[@class="ylist ylist--condensed"]')[0]
                     votes = [name.strip().lower() for name in votes_node.xpath('.//text()') if name.strip()]
                 votes = {
-                    "userful": votes[votes.index("userful") + 1] if "userful" in votes else "0",
+                    "useful": votes[votes.index("useful") + 1] if "useful" in votes else "0",
                     "funny": votes[votes.index("funny") + 1] if "funny" in votes else "0",
                     "cool": votes[votes.index("cool") + 1] if "cool" in votes else "0",
                 }
@@ -236,7 +239,7 @@ def main():
                         'author reviews': review["user"]["reviewCount"],
                         'author photos': review["user"]["photoCount"],
                         'join date': since,
-                        'author useful votes': votes["userful"],
+                        'author useful votes': votes["useful"],
                         'author funny votes': votes["funny"],
                         'author cool votes': votes["cool"],
                         'rating_distribution_5': rating_distribution[0],
@@ -278,7 +281,11 @@ def main():
 
 if __name__ == '__main__':
     try:
-        main()
+        fp = open("a.json","r")
+        l = json.load(fp)
+        fp.close()
+        # TODO 改这里就能改第几组数据
+        main(l[1])
     except KeyboardInterrupt:
         pass
     finally:

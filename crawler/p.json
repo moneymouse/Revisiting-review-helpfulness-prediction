@@ -1,0 +1,666 @@
+{
+    "filters": {
+        "languageCode": "en",
+        "query": "",
+        "sortType": "relevance_desc"
+    },
+    "reviewLanguages": [
+        {
+            "code": "en",
+            "count": 4279
+        },
+        {
+            "code": "ja",
+            "count": 1
+        },
+        {
+            "code": "es",
+            "count": 1
+        }
+    ],
+    "pagination": {
+        "resultsPerPage": 10,
+        "startResult": 1811,
+        "totalResults": 4279
+    },
+    "reviews": [
+        {
+            "id": "rpsnwFHzyh5OJv8OJSdLBw",
+            "userId": "rKF-vr42FCp5vIN6Qv4X5w",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=rKF-vr42FCp5vIN6Qv4X5w",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/5Tk9L_EUsRusEK2aUTmyBw/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/5Tk9L_EUsRusEK2aUTmyBw/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/5Tk9L_EUsRusEK2aUTmyBw/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/5Tk9L_EUsRusEK2aUTmyBw/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/5Tk9L_EUsRusEK2aUTmyBw/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/5Tk9L_EUsRusEK2aUTmyBw/180s.jpg 3.00x",
+                "markupDisplayName": "Chelle V.",
+                "displayLocation": "Rancho Cucamonga, CA",
+                "altText": "Chelle V.",
+                "userUrl": "/user_details?userid=rKF-vr42FCp5vIN6Qv4X5w",
+                "partnerAlias": null,
+                "friendCount": 452,
+                "photoCount": 54,
+                "reviewCount": 168,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "Been here a few times since they opened, each time has been a pleasant experience. They have a large selection of meats, my faves are the spicy pork bulgogi, beef bulgogi, and all the pork bellies. The servers are super attentive, almost to the point where its annoying, but hey, better that than them being MIA the whole meal. They did forget a few items here and there, especially during their busy times..goodluck getting anything in a timely manner then. <br>Overall great place to eat. I&#39;m glad that they opened one so close to me, no more impromptu trips to LA when I&#39;m craving KBBQ.",
+                "language": "en"
+            },
+            "localizedDate": "3/15/2015",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=rKF-vr42FCp5vIN6Qv4X5w",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 3,
+                    "funny": 3,
+                    "cool": 3
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "Hr-m9x3Qs8kq3b6DgEs90A",
+            "userId": "s-GrfuPcsvthYDWu5BkhJg",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=s-GrfuPcsvthYDWu5BkhJg",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/hZZ7OK9HoNBPp8VNaBNhPw/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/hZZ7OK9HoNBPp8VNaBNhPw/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/hZZ7OK9HoNBPp8VNaBNhPw/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/hZZ7OK9HoNBPp8VNaBNhPw/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/hZZ7OK9HoNBPp8VNaBNhPw/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/hZZ7OK9HoNBPp8VNaBNhPw/180s.jpg 3.00x",
+                "markupDisplayName": "Riley B.",
+                "displayLocation": "Riverside, CA",
+                "altText": "Riley B.",
+                "userUrl": "/user_details?userid=s-GrfuPcsvthYDWu5BkhJg",
+                "partnerAlias": null,
+                "friendCount": 203,
+                "photoCount": 3,
+                "reviewCount": 6,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "I&#39;ve never been to Gen korean bbq before and I loved it! It&#39;s a very fun and upbeat atmosphere. The food was great, especially the garlic chicken. The best part was the service. I was in a big party for my friend&#39;s birthday and the service was just fantastic. Both Obed and Francis were very attentive and they made our experience the best! More so, I came late and they got me started right away. Thanks! You two rock!",
+                "language": "en"
+            },
+            "localizedDate": "2/3/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=s-GrfuPcsvthYDWu5BkhJg",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 6,
+                    "funny": 6,
+                    "cool": 4
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "Palu03THkwh9dFI6hM4tNw",
+            "userId": "eVHWLsBuRaCY9-OW6tHStA",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=eVHWLsBuRaCY9-OW6tHStA",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/A7NKlLhKeyj1nmux_ok7vw/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/A7NKlLhKeyj1nmux_ok7vw/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/A7NKlLhKeyj1nmux_ok7vw/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/A7NKlLhKeyj1nmux_ok7vw/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/A7NKlLhKeyj1nmux_ok7vw/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/A7NKlLhKeyj1nmux_ok7vw/180s.jpg 3.00x",
+                "markupDisplayName": "Cristian M.",
+                "displayLocation": "Fullerton, CA",
+                "altText": "Cristian M.",
+                "userUrl": "/user_details?userid=eVHWLsBuRaCY9-OW6tHStA",
+                "partnerAlias": null,
+                "friendCount": 187,
+                "photoCount": null,
+                "reviewCount": 1,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "This place had excellent service. They were on top of everything and were fast. Our server Alan made sure we had everything we needed. Great dinner.",
+                "language": "en"
+            },
+            "localizedDate": "2/12/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=eVHWLsBuRaCY9-OW6tHStA",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 5,
+                    "funny": 4,
+                    "cool": 5
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "RdIxX1Hj71nRI3OuCWmjXw",
+            "userId": "1BgPDunCSZgi5rhU89RGsA",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=1BgPDunCSZgi5rhU89RGsA",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/1NFCuHU-0nntMPsrtp9r1w/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/1NFCuHU-0nntMPsrtp9r1w/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/1NFCuHU-0nntMPsrtp9r1w/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/1NFCuHU-0nntMPsrtp9r1w/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/1NFCuHU-0nntMPsrtp9r1w/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/1NFCuHU-0nntMPsrtp9r1w/180s.jpg 3.00x",
+                "markupDisplayName": "Kristen T.",
+                "displayLocation": "Ontario, CA",
+                "altText": "Kristen T.",
+                "userUrl": "/user_details?userid=1BgPDunCSZgi5rhU89RGsA",
+                "partnerAlias": null,
+                "friendCount": 165,
+                "photoCount": 6,
+                "reviewCount": 13,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "We just about tried everything. I went last night with my two cousins and we should have been rolled out in a wheel barrel with how much we ate. Servers were very attentive and changed the grill as needed. promptly brought anything we asked for and anticipated our needs by bringing napkins and waters. The food was great, we tried the brisket of course, Cajun shrimp, Hawaiian steak, pork belly, short ribs, veggies to grill. we also had some peach soju. Bottom line, everything was good and the server gave us a good tip for grilling the shrimp which i never knew about.",
+                "language": "en"
+            },
+            "localizedDate": "8/21/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=1BgPDunCSZgi5rhU89RGsA",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 1,
+                    "funny": 1,
+                    "cool": 1
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "i_jtYREfj-zmrS2BtxfgsA",
+            "userId": "21jR3XikrqN_JuGxyxC3Yw",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=21jR3XikrqN_JuGxyxC3Yw",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/k6R9rRkmzliyEfoP8eYoxA/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/k6R9rRkmzliyEfoP8eYoxA/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/k6R9rRkmzliyEfoP8eYoxA/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/k6R9rRkmzliyEfoP8eYoxA/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/k6R9rRkmzliyEfoP8eYoxA/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/k6R9rRkmzliyEfoP8eYoxA/180s.jpg 3.00x",
+                "markupDisplayName": "Torri F.",
+                "displayLocation": "Rancho Cucamonga, CA",
+                "altText": "Torri F.",
+                "userUrl": "/user_details?userid=21jR3XikrqN_JuGxyxC3Yw",
+                "partnerAlias": null,
+                "friendCount": 174,
+                "photoCount": 1,
+                "reviewCount": 5,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "I highly recommend this restaurant! We came here for my boyfriend&#39;s birthday and we had a party of 13 with a few people not eating and they were extremely accommodating. Our servers Jen and Darin went above and beyond for us! They were amazing and we will definitely be returning!! Thank you Gen!",
+                "language": "en"
+            },
+            "localizedDate": "8/30/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=21jR3XikrqN_JuGxyxC3Yw",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 1,
+                    "funny": 1,
+                    "cool": 1
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "z-3LLRIXDX-F-25JcqWuZg",
+            "userId": "Oi1IzkZ9_yD_0QmSY5jlkg",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=Oi1IzkZ9_yD_0QmSY5jlkg",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/6fh56cSQ_ZN9pPbDdOTEaQ/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/6fh56cSQ_ZN9pPbDdOTEaQ/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/6fh56cSQ_ZN9pPbDdOTEaQ/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/6fh56cSQ_ZN9pPbDdOTEaQ/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/6fh56cSQ_ZN9pPbDdOTEaQ/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/6fh56cSQ_ZN9pPbDdOTEaQ/180s.jpg 3.00x",
+                "markupDisplayName": "Jake C.",
+                "displayLocation": "Riverside, CA",
+                "altText": "Jake C.",
+                "userUrl": "/user_details?userid=Oi1IzkZ9_yD_0QmSY5jlkg",
+                "partnerAlias": null,
+                "friendCount": 0,
+                "photoCount": 4,
+                "reviewCount": 5,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "Who doesn&#39;t like unlimited korean bbq. Dead people, that&#39;s who. Place was super clean, food was fresh, also customer service is A+. If you happen to get Alan as your server, you&#39;re guaranteed to have a good time.",
+                "language": "en"
+            },
+            "localizedDate": "1/30/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=Oi1IzkZ9_yD_0QmSY5jlkg",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 6,
+                    "funny": 6,
+                    "cool": 5
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "h6kqB6ehizoPJgluRLqRAw",
+            "userId": "iwmi1w237_4hLueGlWbOnw",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=iwmi1w237_4hLueGlWbOnw",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/lv9NXUiJAgeWunShE_IrEQ/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/lv9NXUiJAgeWunShE_IrEQ/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/lv9NXUiJAgeWunShE_IrEQ/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/lv9NXUiJAgeWunShE_IrEQ/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/lv9NXUiJAgeWunShE_IrEQ/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/lv9NXUiJAgeWunShE_IrEQ/180s.jpg 3.00x",
+                "markupDisplayName": "Jr S.",
+                "displayLocation": "Upland, CA",
+                "altText": "Jr S.",
+                "userUrl": "/user_details?userid=iwmi1w237_4hLueGlWbOnw",
+                "partnerAlias": null,
+                "friendCount": 121,
+                "photoCount": 5,
+                "reviewCount": 5,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "Had a really good time! Alan and Adrian are great waiters that gave us a good time. They were kind and very helpful in our orders. The food is very good and I&#39;d recommend it to all my friends.",
+                "language": "en"
+            },
+            "localizedDate": "2/18/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=iwmi1w237_4hLueGlWbOnw",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 4,
+                    "funny": 4,
+                    "cool": 4
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        },
+        {
+            "id": "thOMAWqlKI_zJAiAlk6dhA",
+            "userId": "bMG_GDVLPGx240Hpye19IA",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=bMG_GDVLPGx240Hpye19IA",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/180s.jpg 3.00x",
+                "markupDisplayName": "Jacqui R.",
+                "displayLocation": "Victorville, CA",
+                "altText": "Jacqui R.",
+                "userUrl": "/user_details?userid=bMG_GDVLPGx240Hpye19IA",
+                "partnerAlias": null,
+                "friendCount": 0,
+                "photoCount": 23,
+                "reviewCount": 21,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "If you&#39;re looking for good food and amazing service, this is the place to go. I live in the high desert area and used to travel all the way to LA just for AYCE Korean BBQ. I haven&#39;t gone back since I found Gen KBBQ. the atmosphere, food, and service were way beyond my expectations. The kimchi is delicious! And the customer service is amazing. I&#39;ve been here 2 times and both times had amazing servers (Erica and Phung). We can&#39;t wait to go back!",
+                "language": "en"
+            },
+            "localizedDate": "8/21/2016",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [
+                {
+                    "src": "https://s3-media0.fl.yelpcdn.com/bphoto/ZGSRQtnimC7LzslUCTX2CA/300s.jpg",
+                    "link": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?reviewid=thOMAWqlKI_zJAiAlk6dhA&select=ZGSRQtnimC7LzslUCTX2CA",
+                    "altText": "Photo of Gen Korean BBQ House - Rancho Cucamonga, CA, United States. We&#39;ve tried many meats but brisket is always a favorite",
+                    "width": 300,
+                    "height": 300,
+                    "caption": "We've tried many meats but brisket is always a favorite"
+                }
+            ],
+            "lightboxMediaItems": [
+                {
+                    "business": {
+                        "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                        "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                        "name": "Gen Korean BBQ House"
+                    },
+                    "businessAvatar": {
+                        "altText": "Gen Korean BBQ House",
+                        "height": 30,
+                        "src": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/30s.jpg",
+                        "srcSet": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/ss.jpg 1.33x,https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/90s.jpg 3.00x",
+                        "url": "/biz/gen-korean-bbq-house-rancho-cucamonga-2",
+                        "width": 30
+                    },
+                    "caption": "We&#39;ve tried many meats but brisket is always a favorite",
+                    "helpfulCount": 0,
+                    "id": "ZGSRQtnimC7LzslUCTX2CA",
+                    "timeUploaded": "August 21, 2016",
+                    "type": "photo",
+                    "url": "https://s3-media0.fl.yelpcdn.com/bphoto/ZGSRQtnimC7LzslUCTX2CA/o.jpg",
+                    "user": {
+                        "avatar": {
+                            "linkUrl": "/user_details?userid=bMG_GDVLPGx240Hpye19IA",
+                            "srcUrl": "https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/30s.jpg",
+                            "srcSetUrl": "https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/ss.jpg 1.33x,https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/60s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/86k9fSJL_FhEn9Q4szB39A/90s.jpg 3.00x"
+                        },
+                        "displayName": "Jacqui R.",
+                        "eliteYear": null,
+                        "friendCount": 0,
+                        "id": "bMG_GDVLPGx240Hpye19IA",
+                        "isCurrentlyElite": false,
+                        "reviewCount": 21,
+                        "url": "/user_details?userid=bMG_GDVLPGx240Hpye19IA"
+                    },
+                    "userVote": "NoVote"
+                }
+            ],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=bMG_GDVLPGx240Hpye19IA",
+            "totalPhotos": 1,
+            "feedback": {
+                "counts": {
+                    "useful": 0,
+                    "funny": 0,
+                    "cool": 0
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": [
+                {
+                    "label": "1 photo",
+                    "title": null,
+                    "href": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=bMG_GDVLPGx240Hpye19IA",
+                    "iconName": "18x18_camera",
+                    "iconColor": ""
+                }
+            ]
+        },
+        {
+            "id": "6apUzdj3OmtCJzoJpCFNow",
+            "userId": "DopQmmya2VkfusZlpbef3w",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=DopQmmya2VkfusZlpbef3w",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/180s.jpg 3.00x",
+                "markupDisplayName": "Gladys M.",
+                "displayLocation": "Riverside, CA",
+                "altText": "Gladys M.",
+                "userUrl": "/user_details?userid=DopQmmya2VkfusZlpbef3w",
+                "partnerAlias": null,
+                "friendCount": 0,
+                "photoCount": 16,
+                "reviewCount": 29,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "Happy Thanksgiving, mine wasn&#39;t to great. went in with my family around 4pm thanksgiving day. And worst service ever wait time 45 mtns. Even though the place was empty, low staff members so the service was poor. And the wait time was long getting the salad,drinks,rice,meats. The table was Not set up with the condiments, silverware. I am very disappointed since it is the Second time of bad service on different dates. Will no longer be a customer at this location.",
+                "language": "en"
+            },
+            "localizedDate": "11/25/2017",
+            "localizedDateVisited": null,
+            "rating": 1,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=DopQmmya2VkfusZlpbef3w",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 0,
+                    "funny": 1,
+                    "cool": 0
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": true,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": [
+                {
+                    "id": "qe4t4tkwh_6gehYotTkWEA",
+                    "userId": "DopQmmya2VkfusZlpbef3w",
+                    "business": {
+                        "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                        "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                        "name": "Gen Korean BBQ House",
+                        "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+                    },
+                    "user": {
+                        "link": "/user_details?userid=DopQmmya2VkfusZlpbef3w",
+                        "src": "https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/60s.jpg",
+                        "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/72IjiBsH45GXlW92Jg916g/180s.jpg 3.00x",
+                        "markupDisplayName": "Gladys M.",
+                        "displayLocation": "Riverside, CA",
+                        "altText": "Gladys M.",
+                        "userUrl": "/user_details?userid=DopQmmya2VkfusZlpbef3w",
+                        "partnerAlias": null,
+                        "friendCount": 0,
+                        "photoCount": 16,
+                        "reviewCount": 29,
+                        "eliteYear": null
+                    },
+                    "comment": {
+                        "text": "Starting with the most important aspect of a restaurant CUSTOMER SERVICE not good...had to keep asking for. Things...COMPARING TO GEN IN ROWLAND HEIGHTS THE BEST RESTARAUNT....Rancho Cucamonga was very disappointing experience will not be going there again......no no<br><br>Food was fine but the \u00a0experience made it not so enjoyable......",
+                        "language": "en"
+                    },
+                    "localizedDate": "11/28/2015",
+                    "localizedDateVisited": null,
+                    "rating": 3,
+                    "photos": [],
+                    "lightboxMediaItems": [],
+                    "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=DopQmmya2VkfusZlpbef3w",
+                    "totalPhotos": 0,
+                    "feedback": {
+                        "counts": {
+                            "useful": 1,
+                            "funny": 0,
+                            "cool": 0
+                        },
+                        "userFeedback": {
+                            "useful": false,
+                            "funny": false,
+                            "cool": false
+                        },
+                        "voterText": null
+                    },
+                    "isUpdated": false,
+                    "businessOwnerReplies": null,
+                    "appreciatedBy": null,
+                    "previousReviews": null,
+                    "tags": null
+                }
+            ],
+            "tags": []
+        },
+        {
+            "id": "ftsCH_UNw-8eclJNrbeNbw",
+            "userId": "1-9rAmaMmli1A06EnDlR_Q",
+            "business": {
+                "id": "QRcdEUzQaDFiZcQIwhmJZw",
+                "alias": "gen-korean-bbq-house-rancho-cucamonga-2",
+                "name": "Gen Korean BBQ House",
+                "photoSrc": "https://s3-media0.fl.yelpcdn.com/bphoto/vZ0yLxsjzUX5Llg0zdM4uA/60s.jpg"
+            },
+            "user": {
+                "link": "/user_details?userid=1-9rAmaMmli1A06EnDlR_Q",
+                "src": "https://s3-media0.fl.yelpcdn.com/photo/6tDSMYK1marCD-Ak8BdezA/60s.jpg",
+                "srcSet": "https://s3-media0.fl.yelpcdn.com/photo/6tDSMYK1marCD-Ak8BdezA/ms.jpg 1.67x,https://s3-media0.fl.yelpcdn.com/photo/6tDSMYK1marCD-Ak8BdezA/120s.jpg 2.00x,https://s3-media0.fl.yelpcdn.com/photo/6tDSMYK1marCD-Ak8BdezA/90s.jpg 1.50x,https://s3-media0.fl.yelpcdn.com/photo/6tDSMYK1marCD-Ak8BdezA/168s.jpg 2.80x,https://s3-media0.fl.yelpcdn.com/photo/6tDSMYK1marCD-Ak8BdezA/180s.jpg 3.00x",
+                "markupDisplayName": "Shaday D.",
+                "displayLocation": "Chino, CA",
+                "altText": "Shaday D.",
+                "userUrl": "/user_details?userid=1-9rAmaMmli1A06EnDlR_Q",
+                "partnerAlias": null,
+                "friendCount": 274,
+                "photoCount": 1,
+                "reviewCount": 6,
+                "eliteYear": null
+            },
+            "comment": {
+                "text": "So me and my friend tori were looking for a good night out with some good food and we happened to stop here. I usually don&#39;t like Korean BBQ, but our server Alan made it a lot better. Very descriptive on what each of the different meats taste like so that way I could enjoy it. He was totally right. I got the Hawaiian Steak and my friend picked the Short Ribs. Let me tell you, I LOVED it. Alan was very attentive. Made sure my friend and I were doing okay the whole night. Best server I&#39;ve had in a while. Definitely coming back soon!",
+                "language": "en"
+            },
+            "localizedDate": "7/30/2017",
+            "localizedDateVisited": null,
+            "rating": 5,
+            "photos": [],
+            "lightboxMediaItems": [],
+            "photosUrl": "/biz_photos/gen-korean-bbq-house-rancho-cucamonga-2?userid=1-9rAmaMmli1A06EnDlR_Q",
+            "totalPhotos": 0,
+            "feedback": {
+                "counts": {
+                    "useful": 1,
+                    "funny": 1,
+                    "cool": 1
+                },
+                "userFeedback": {
+                    "useful": false,
+                    "funny": false,
+                    "cool": false
+                },
+                "voterText": null
+            },
+            "isUpdated": false,
+            "businessOwnerReplies": null,
+            "appreciatedBy": null,
+            "previousReviews": null,
+            "tags": []
+        }
+    ]
+}
