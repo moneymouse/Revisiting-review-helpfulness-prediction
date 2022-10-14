@@ -18,7 +18,13 @@ sys.path.append(os.getcwd())  # 修复嵌入式 Python 的导入问题
 MIN_IMAGES_NUM = 1  # 最少图片数量，如果少于这个数量则跳过这条评论
 MIN_TEXT_LENGTH = 20  # 最短评论长度
 # FIRST = 10130  # 用于断点续传
-FIRST = 680
+# FIRST = 680
+
+# 用于断点续传
+FIRST = 0
+# 用于断点续传
+INDEX = 0
+
 #URL = "https://www.yelp.com//biz/bacchanal-buffet-las-vegas-9"  # 需要爬取的餐馆 url
 TIMEOUT = 15  # 请求超时
 PROXY_URL = "https://h.shanchendaili.com/api.html?action=get_ip&key=HUf8af2f1c09212152278CIw&time=10&count=1&protocol=http&type=json&only=0"
@@ -112,7 +118,7 @@ session = requests.Session()  # 持久会话
 
 def common_get(url) -> requests.Response:
     print(f"{url}")
-    res = requests.get(url,headers=HEADERS_LIST[0])
+    res = requests.get(url,headers=HEADERS_LIST[2])
     print(f"status:{res.ok}")
     time.sleep(0.005)
     return res
@@ -130,21 +136,34 @@ def write_row(filename: str, row: dict):
 
 
 def log(*text):
+    with open("done.txt","a", encoding='utf-8-sig') as fp:
+        fp.writelines(f"[{time.strftime('%X')}]: {''.join([str(t) for t in text])}")
     print(f"[{time.strftime('%X')}]", *text, flush=True)
 
 
-def main(url_list):
-    for hf_url in url_list:
+def main(url_list,FIRST,INDEX):
+    for hf_url in url_list[INDEX:]:
 
         url = "https://www.yelp.com/" + hf_url
-        resp = common_get(url)  # 使用代理请求网页
-        if resp is None:
-            raise Exception(f"无代理可请求网页（{url}），或所有代理已达最大使用次数，稍后再试")
+        resp = {}
+        while True:
+            try:
+                resp = common_get(url)  # 使用代理请求网页
+            except Exception as e:
+                print(f"无代理可请求网页（{url}），或所有代理已达最大使用次数，程序会在50s后重新运行，请不要关闭程序")
+                time.sleep(50)
+                continue
+            if resp is None:
+                print(f"无代理可请求网页（{url}），或所有代理已达最大使用次数，程序会在50s后重新运行，请不要关闭程序")
+                time.sleep(50)
+                continue
+            parser = etree.HTML(resp.text)  # 解析网页
+            if(len(parser.xpath('//meta[@name="yelp-biz-id"]/@content'))<1):
+                print("暂无代理，等待中...")
+                time.sleep(50)
+                continue
+            break
 
-        parser = etree.HTML(resp.text)  # 解析网页
-        if(len(parser.xpath('//meta[@name="yelp-biz-id"]/@content'))<1):
-            print("暂无代理，等待中...")
-            time.sleep(50)
         meta = parser.xpath('//meta[@name="yelp-biz-id"]/@content')[0]  # 该酒店的唯一ID，用于构建 comment_url
         page_data = {
             "address": "\n".join(parser.xpath('//address//span/text()')),
@@ -160,20 +179,18 @@ def main(url_list):
         template = f"https://www.yelp.com/biz/{meta}/review_feed?rl=en&q=&sort_by=relevance_desc&start={{start}}"
         start = total_reviews = FIRST  # 从 FIRST 开始
 
-        while start < total_reviews or start == FIRST:
-            comment_url = template.format(start=start)  # 评论数据的 url
-            # 使用代理请求数据
-            resp = common_get(comment_url)
-            if resp is None and start != FIRST:  # 无可用代理，保存当前数据并退出
-                raise Exception(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，稍等后修改 FIRST = {start} 再重新运行")
+        while start < total_reviews or start == FIRST :
 
+            comment_url = template.format(start=start)  # 评论数据的 url
+            
             try:
+                # 使用代理请求数据
+                resp = common_get(comment_url)
                 data = resp.json()
                 reviews = data["reviews"]
             except Exception as e:
-                print(e)
-                print(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，稍等后修改 FIRST = {start} 再重新运行")
-                time.sleep(10)
+                print(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，请稍等且不要关闭程序，100秒后程序将重启。\n若程序关闭，请修改 FIRST = {start}，INDEX = {url_list.index(hf_url)} 再重新运行")
+                time.sleep(50)
                 continue
             if data and start == FIRST:  # 第一次遍历需要更新评论数量
                 total_reviews = data["pagination"]["totalResults"]
@@ -191,13 +208,21 @@ def main(url_list):
                 # 往 row 中添加评论用户信息
                 user_url = f"https://www.yelp.com{review['user']['link']}"
                 
-                resp = common_get(user_url)
-                # 尝试绕过防火墙
-                # if random.choice([True, *([False] * 3)]):
-                #     proxy_get(url)
-                if resp is None:
-                    raise Exception(f"无可用代理访问 {comment_url}，餐厅链接{url},或所有代理已达最大使用次数，稍等后修改 FIRST = {start} 再重新运行")
-
+                while True:
+                    try:
+                        resp = common_get(user_url)
+                    # 尝试绕过防火墙
+                    # if random.choice([True, *([False] * 3)]):
+                    #     proxy_get(url)
+                    except Exception as e:
+                        print(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，请稍等且不要关闭程序，100秒后程序将重启。\n若程序关闭，请修改 FIRST = {start}，INDEX = {url_list.index(hf_url)} 再重新运行")
+                        time.sleep(50)
+                        continue
+                    if resp is None:
+                        print(f"无代理可访问 {comment_url}，或所有代理已达最大使用次数，请稍等且不要关闭程序，100秒后程序将重启。\n若程序关闭，请修改 FIRST = {start}，INDEX = {url_list.index(hf_url)} 再重新运行")
+                        time.sleep(50)
+                        continue
+                    break
                 parser = etree.HTML(resp.text)
 
                 # 提取投票信息
@@ -265,13 +290,14 @@ def main(url_list):
                     }
                 except (KeyError, IndexError) as e:
                     raise Exception(f"出现异常，已爬取数据保存在 {filename} 中，"
-                                    f"修复后修改 FIRST = {start} 再重新运行") from e
+                                    f"修复后修改 FIRST = {start} INDEX = {url_list.index(hf_url)} 再重新运行") from e
 
                 write_row(filename, row)  # 将当前评论数据写入文件中
                 # for end
 
             start += 10  # 每次爬取 10 条评论
             # while end
+        FIRST = 0
 
     # 完成
     with open("done.txt", mode="a", encoding='utf8') as f:
@@ -284,8 +310,9 @@ if __name__ == '__main__':
         fp = open("a.json","r")
         l = json.load(fp)
         fp.close()
-        # TODO 改这里就能改第几组数据
-        main(l[1])
+        
+        # TODO 改这里就能改第几组餐厅
+        main(l[2],FIRST=FIRST,INDEX=INDEX)
     except KeyboardInterrupt:
         pass
     finally:

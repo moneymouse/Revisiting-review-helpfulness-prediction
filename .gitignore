@@ -1,1 +1,4 @@
 crawler/data/*
+*.zip
+*.tar.gz
+*.csv
